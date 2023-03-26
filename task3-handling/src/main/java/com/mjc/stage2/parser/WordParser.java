@@ -9,6 +9,10 @@ public class WordParser extends AbstractTextParser {
     public WordParser() {
     }
 
+    public WordParser(AbstractTextParser nextParser) {
+        super(nextParser);
+    }
+
     @Override
     public void parse(AbstractTextComponent abstractTextComponent, String string) {
         string.chars()

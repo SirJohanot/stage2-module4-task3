@@ -11,6 +11,9 @@ public class LexemeParser extends AbstractTextParser {
     private static final String LEXEME_REGEX = "\\s+";
     private static final String WORD_REGEX = "\\w[\\w!=?():]+";
 
+    public LexemeParser() {
+    }
+
     public LexemeParser(AbstractTextParser nextParser) {
         super(nextParser);
     }
